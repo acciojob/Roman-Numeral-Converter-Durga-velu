@@ -13,8 +13,8 @@ function convertToRoman(num) {
 	let ans=""
 	while(){
 		for(let key in obj){
-			if(obj[key]<num){
-				(ans.push(key),num=num-obj[key])
+			if(obj[key]<=num){
+				(ans=ans+key;num=num-obj[key])
 			}
 		}
 	}
