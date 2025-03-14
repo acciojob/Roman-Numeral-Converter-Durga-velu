@@ -12,13 +12,17 @@ function convertToRoman(num) {
   //your code here
 	let ans=""
 	while(num>0){
+		num=num%10
 		for(let key in obj){
 			if(obj[key]<=num){
-				(ans=ans+key;num=num-obj[key])
+				(ans=ans+key)
+				num=parseInt(num/10)
 			}
 		}
 	}
-return ans
+
+	let res=ans.split("").reverse().join("")
+	return  res
 }
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 
