@@ -18,18 +18,16 @@ function convertToRoman(num) {
  if (num>10000 || num<1) {
 	return "enter the input range"
 }
-else {
    //your code here
 	let ans=""
-		for(let key in obj){
-			while (num >= obj[key]) {
+	for(let key in obj){
+	while (num >= obj[key]) {
       ans += key;
       num -= obj[key];
     }
   }	
 return ans
 }
- 
 
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 let num=prompt("enter the number")
