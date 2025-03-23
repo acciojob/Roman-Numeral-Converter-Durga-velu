@@ -1,11 +1,17 @@
 function convertToRoman(num) {
   	const obj = {
-      'M':1000,
+        'M':1000,
+      'CM': 900,
       'D': 500, 
+      'CD': 400,
       'C': 100, 
+      'XC': 90,
       'L': 50, 
+      'XL': 40,
       'X': 10, 
+      'IX': 9,
       'V': 5, 
+      'IV': 4,
       'I': 1
     };
 
@@ -13,35 +19,15 @@ function convertToRoman(num) {
 	let ans=""
 
 		for(let key in obj){
-				while(num>=obj[key]){
-				 if(num>=90 || num<100){
-					 ans+="XC";
-					 num-=90
-				 }
-					 else if(num>=40 || num<50){
-						ans=ans+"XL";
-						 num-=40;
-					}
-					 
-					 else if(num===9){
-						ans=ans+"IX";
-						 num-=9
-					}
-					else if(num===4){
-						ans=ans+"IV"
-						num-=4;
-					}
-					
-				ans+=key
-				num-=obj[i]
-			}
-		}
-	}
+			while (num >= obj[key]) {
+      ans += key;
+      num -= obj[key];
+    }
+  }		
 return ans
 }
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
-
-
+let num=prompt("enter the number")
 alert(convertToRoman(num))
 
  // let num=798
