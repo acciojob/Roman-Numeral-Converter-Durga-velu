@@ -30,13 +30,11 @@ else {
 return ans
 }
  
-
 }
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 let num=prompt("enter the number")
 alert(convertToRoman(num))
-
-// console.log(convertToRoman(num))
+ console.log(convertToRoman(num))
 
 // do not edit below this line
 module.exports = convertToRoman
