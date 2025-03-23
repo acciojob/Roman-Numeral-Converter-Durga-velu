@@ -15,34 +15,28 @@ function convertToRoman(num) {
       'I': 1
     };
 
- if (num>10000) {
- 	
-  //your code here
+ if (num>10000 && num<1) {
+	return "enter the input range"
+}
+else {
+   //your code here
 	let ans=""
-
 		for(let key in obj){
 			while (num >= obj[key]) {
       ans += key;
       num -= obj[key];
     }
   }	
-	 
- }
-
-else{
-	return "input range should be less than 10000"
-}
-	
 return ans
+}
+ 
+
 }
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 let num=prompt("enter the number")
 alert(convertToRoman(num))
 
- // let num=798
 // console.log(convertToRoman(num))
-
-
 
 // do not edit below this line
 module.exports = convertToRoman
