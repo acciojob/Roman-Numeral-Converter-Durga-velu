@@ -15,7 +15,7 @@ function convertToRoman(num) {
       'I': 1
     };
 
- if (num>10000 && num<1) {
+ if (num>10000 || num<1) {
 	return "enter the input range"
 }
 else {
