@@ -1,5 +1,4 @@
 function convertToRoman(num) {
-	
   	const obj = {
         'M':1000,
       'CM': 900,
@@ -16,8 +15,8 @@ function convertToRoman(num) {
       'I': 1
     };
 
- if (num>10000 || num<1) {
-	return "enter the input range"
+ if (num>100000 || num<1) {
+	return "enter the input range should be 100000"
 }
    //your code here
 	let ans=""
