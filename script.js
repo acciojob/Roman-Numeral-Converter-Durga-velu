@@ -16,7 +16,7 @@ function convertToRoman(num) {
     };
 
  if (num>100000 || num<1) {
-	return "enter the input range should be 100000"
+	return "Please enter a number in the input range should be 0 to  100000"
 }
    //your code here
 	let ans=""
